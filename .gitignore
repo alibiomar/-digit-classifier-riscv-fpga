@@ -1,0 +1,101 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Generic build and compiler outputs
+build/
+dist/
+*.o
+*.a
+*.elf
+*.exe
+*.out
+*.hex
+*.asm
+*.map
+
+# Generated firmware images.
+# The checked-in test dataset remains available for verification.
+*.bin
+!test/test_set.bin
+
+# HLS generated output
+hls/**/.autopilot/
+hls/**/.debug/
+hls/**/csim/
+hls/**/syn/
+hls/**/impl/
+hls/**/.Xil/
+hls/**/*.aps
+hls/**/*.jou
+hls/**/*.log
+hls/**/*.zip
+hls/**/*.wdb
+hls/**/*.wcfg
+hls/**/*.protoinst
+hls/**/*.pdb
+hls/**/*.xml
+hls/**/*.json
+hls/**/*.tmp/
+
+# Keep HLS source and reproducibility inputs
+!hls/**/digit_mlp.cpp
+!hls/**/digit_mlp.h
+!hls/**/digit_mlp_tb.cpp
+!hls/**/weights.h
+!hls/**/hls.app
+!hls/**/directives.tcl
+!hls/**/script.tcl
+
+# Vivado generated projects, caches, runs, and simulation output
+vivado/.Xil/
+vivado/vivado.cache/
+vivado/vivado.gen/
+vivado/vivado.hw/
+vivado/vivado.ip_user_files/
+vivado/vivado.runs/
+vivado/vivado.sim/
+vivado/*.jou
+vivado/*.log
+vivado/*.str
+vivado/*.xsa
+vivado/*.bit
+vivado/*.ltx
+vivado/*.lpr
+vivado/*.wdb
+
+# Generated simulation and implementation files
+*.dcp
+*.rpx
+*.rpt
+*.vdi
+*.vds
+*.wdf
+*.bda
+*.xpe
+*.pb
+*.wcfg
+*.wlf
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
+*~
+.#*
